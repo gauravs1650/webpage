@@ -98,7 +98,7 @@
             text-align: left;
             padding: 10px 0px;
             position: sticky;
-            top: 0px;
+            top: 42px;
             overflow: hidden;
             z-index: 2;
             justify-content: center;
@@ -378,6 +378,45 @@
         textarea{
             border-radius: 12px;
         }
+        #searchbar::before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            /* background-color: black; */
+            z-index: -2;
+        }
+        #searchbar{
+            /* border: 2px solid red; */
+            text-align: center;
+            background-color: black;
+            position: sticky;
+            top: 0px;
+            padding-top: 12px;
+            z-index: 2;
+        }
+        #searchbar input{
+            /* text-align: center; */
+            width: 500px;
+            border-radius: 15px;
+            padding: 5px 0px 5px 100px;
+            /* margin-left: 70px; */
+            font-size: 15px;
+            position: relative;
+            /* top: 20px; */
+        }
+        #searchbar img{
+            height: 15px;
+            width: 15px;
+            position: relative;
+            top: 3px;
+            right: 70px;
+        }
+        #searchbar img:hover{
+            background-color: rgb(40, 168, 224);
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -386,6 +425,10 @@
 
     <div class="logo" id="logo1">
         <img src="Food_logo.png" alt="Remote image">
+    </div>
+    <div id="searchbar">
+        <input type="text" value="" placeholder="Search our website">
+        <img src="search-removebg-preview.png" alt="">
     </div>
     <header class="navbar">
 
@@ -396,8 +439,7 @@
             <li><a href="#item-2">Services</a></li>
             <li><a href="#clt">Clients</a></li>
             <li><a href="#cnt">Contact</a></li>
-<!--             <li><input type="text" value="" placeholder="Search our website"></li> -->
-
+            
         </ul>
         <!-- <input type="text" value="" placeholder="Search our website"> -->
     </header>
